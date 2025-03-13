@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt Động Đoàn TNCS HCM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+        .navbar {
+            background: #c41e3a;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .main-header {
+            background: url('logo.jpg') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            margin-top: 60px;
+        }
+        .header-content {
+            background: rgba(0,0,0,0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        .activities {
+            padding: 4rem 2rem;
+        }
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .activity-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .activity-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .activity-content {
+            padding: 1.5rem;
+        }
+        .stats {
+            background: #c41e3a;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#activities">Hoạt Động</a></li>
+            <li><a href="#stats">Thống Kê</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-header" id="home">
+        <div class="header-content">
+            <h1>Đoàn TNCS Hồ Chí Minh</h1>
+            <p>Xung kích - Tình nguyện - Sáng tạo - Phát triển</p>
+        </div>
+    </header>
+
+    <section class="activities" id="activities">
+        <h2>Hoạt Động Tiêu Biểu</h2>
+        <div class="activity-grid">
+            <div class="activity-card">
+                <img src="logo.jpg" alt="Tình nguyện">
+                <div class="activity-content">
+                    <h3>Mùa Hè Xanh</h3>
+                    <p>Hoạt động tình nguyện hè, góp phần xây dựng nông thôn mới</p>
+                </div>
+            </div>
+            <div class="activity-card">
+                <img src="logo.jpg" alt="Học tập">
+                <div class="activity-content">
+                    <h3>Học Tập Tốt</h3>
+                    <p>Phong trào học tập và làm theo tấm gương đạo đức Hồ Chí Minh</p>
+                </div>
+            </div>
+            <div class="activity-card">
+                <img src="logo.jpg" alt="Sáng tạo">
+                <div class="activity-content">
+                    <h3>Sáng Tạo Trẻ</h3>
+                    <p>Cuộc thi sáng tạo thanh thiếu niên nhi đồng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" id="stats">
+        <h2>Thống Kê</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>7M+</h3>
+                <p>Đoàn viên</p>
+            </div>
+            <div class="stat-item">
+                <h3>93</h3>
+                <p>Năm thành lập</p>
+            </div>
+            <div class="stat-item">
+                <h3>63</h3>
+                <p>Tỉnh thành</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Liên hệ: contact@doanthanhnien.vn</p>
+        <p>© 2024 Đoàn TNCS Hồ Chí Minh</p>
+    </footer>
+</body>
+</html>
